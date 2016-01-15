@@ -1,0 +1,16 @@
+<ion-view view-title="Prochainement" ng-controller="prochainement">
+  <ion-content>
+  <ion-refresher
+    pulling-text="Chargement des données"
+    on-refresh="doRefresh_pro()">
+  </ion-refresher>
+<div class="list card" ng-repeat="post in posts" >
+	<div class="item item-text-wrap">
+		<center><h2><b>{{post.title}}</b></h2></center>
+	</div>
+	<div class="item item-image">
+		<img src="{{post.featured_image.guid}}"></img>
+	</div>
+</div>
+  </ion-content>
+</ion-view>

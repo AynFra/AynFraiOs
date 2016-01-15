@@ -1,0 +1,24 @@
+<ion-view view-title="Ayngaran France">
+  <ion-content>
+<div class="list card" ng-repeat="post in posts">
+	<div class="item item-text-wrap">
+		<center><h2><b>{{post.id}}</b></h2></center>
+	</div>
+	<div class="item item-image">
+		<a href="#/app/playlists/{{post.ID}}"><img src="{{post.featured_image.guid}}" ></img></a>
+    <b>{{post.content}}</b>
+	</div>
+</div>
+  </ion-content>
+</ion-view>
+
+
+<!--<ion-view view-title="Playlists">
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="playlist in playlists" href="#/app/playlists/{{playlist.id}}">
+        {{playlist.title}}
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view> -->
